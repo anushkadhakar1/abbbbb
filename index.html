@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Love!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-top: 50px;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.8em;
+      margin-top: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1.5em;
+      color: #fff;
+      background: linear-gradient(45deg, #ff6f61, #d93b60);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #d93b60, #ff6f61);
+    }
+
+    .balloons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .balloon {
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      background: radial-gradient(circle at 50% 35%, #f9d423, #ff4b47);
+      border-radius: 50% 50% 50% 50% / 60% 60% 100% 100%;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .string {
+      position: absolute;
+      width: 2px;
+      height: 70px;
+      background: #fff;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    /* .photo{
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+    } */
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+      }
+      50% {
+        transform: translateY(50vh) translateX(20px);
+      }
+      100% {
+        transform: translateY(-10vh) translateX(-20px);
+      }
+    }
+
+    .balloon:nth-child(1) {
+      background: radial-gradient(circle at 50% 35%, #ff9a9e, #fad0c4);
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .balloon:nth-child(2) {
+      background: radial-gradient(circle at 50% 35%, #a18cd1, #fbc2eb);
+      left: 30%;
+      animation-delay: 2s;
+    }
+
+    .balloon:nth-child(3) {
+      background: radial-gradient(circle at 50% 35%, #fad0c4, #ff9a9e);
+      left: 50%;
+      animation-delay: 4s;
+    }
+
+    .balloon:nth-child(4) {
+      background: radial-gradient(circle at 50% 35%, #fbc2eb, #a18cd1);
+      left: 70%;
+      animation-delay: 6s;
+    }
+
+    .balloon:nth-child(5) {
+      background: radial-gradient(circle at 50% 35%, #ff9a9e, #fad0c4);
+      left: 90%;
+      animation-delay: 8s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, My Love! 🎉</h1>
+  <p>You make my world brighter and more beautiful every day. 💖</p>
+  <button class="button" onclick="showSurprise()">Tap for Your Surprise!</button>
+  <br>
+  <br>
+  <div class="photo">
+    <img src="./WhatsApp Image 2024-12-11 at 10.40.29 PM.jpeg" alt="">
+  </div>
+
+  <div class="balloons">
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      const surpriseMessage = document.createElement('div');
+      surpriseMessage.style.position = 'absolute';
+      surpriseMessage.style.top = '50%';
+      surpriseMessage.style.left = '50%';
+      surpriseMessage.style.transform = 'translate(-50%, -50%)';
+      surpriseMessage.style.fontSize = '0.rem';
+      surpriseMessage.style.color = '#fff';
+      surpriseMessage.style.textShadow = '2px 2px 10px rgba(0, 0, 0, 0.5)';
+      surpriseMessage.style.background = 'rgba(0, 0, 0, 0.7)';
+      surpriseMessage.style.padding = '20px';
+      surpriseMessage.style.borderRadius = '10px';
+      surpriseMessage.innerText = "💝💝💝Wish you a very happppppyyyyyyy birthday 💓💓💓💓💓my babyyyyyyy 😚😚😚😚😚😚😚😚aap Jioo infinity saal wo b mere sathh☺️☺️💝🥰🥰aap hmeshaa hste muskrate raho bas yahi ek tamanna hai ❤❤ I pray for you aap jaldi hi success hooooo aapkii life ki sari problems door ho jaaye ❤💝💝💝💝💝🌹hmeshaa khus rahooooo my jannnn❤❤😘😘😘😘😘😍😍😍😍😍😍😍🥰🥰🥰🥰🥰🥰❤❤my sona monaaaa💋💋💕💕lovvvvvvveeeee you a lot bachaaaaaaa😍🌺🌺💋❤ meri jaan💕💕 mera sukun💓💓💓💓💓 🙈🙈🙈my heart ☺️☺️😚😚😚my sweetuuuu 😚❤❤ my chutku babyyyyyyy💕💕💕💕💕💓💓💓💓💓💓💓😻 my future partner🤗🤗🤗bass thoda gussaaa kam kr liya karo baki aapse best koi naiii😍😍🥰🥰🩷🩷🫠🫠🐰🐰🐰🥰❤❤❤ I promise aapko hmeshaaa pyar krugi 😌 kbhi kahi nahi jaugiii🫶🫶🫶🤗🤗🤗🤗🙈🙈rahugi aapke dil k kareebbbb🥰🥰🥰🥰😻👀🤭🤭🤭🤌🤌i wishhh aapki sari khwaishe puri ho jaayeeee😁😁😁jaldi  s jaldi job lag jaaye fir hm sath m rhe hmesha hmesha k liyeeee😘😘😘😘❤️‍🔥❤️‍🔥I love you jana from bottom of my heart 🫀❤❤mera dil ka tukdaa nai nai pura ka pura dil🥰🥰🫰🫰🥰💋👩‍❤️‍👨👀 again aaaaaaaappppppyyyyyyyyyy wallaaaaa biirrythhhddaaayyyy chhuuttkuuuu babbbyyy😽🤩🥳🥳🥳🥳🥳🥳🥳🥳";
+
+      document.body.appendChild(surpriseMessage);
+
+      setTimeout(() => {
+        document.body.removeChild(surpriseMessage);
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
